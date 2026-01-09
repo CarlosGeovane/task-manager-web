@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="header-content">
+        <input type="text" id="taskInput" placeholder="Digite uma tarefa..." />
+        <button id="addBtn">Adicionar</button>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <div id="emptyState" class="hero-section">
+        <div class="hero-icon-container">
+          <div class="browser-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="browser-body">
+            <div class="mock-line-check"></div>
+            <div class="mock-line-check"></div>
+            <div class="mock-line-check"></div>
+          </div>
+        </div>
+        <p class="hero-subtitle">Crie listas de tarefas gratuitas</p>
+        <h1 class="hero-title">Seu trabalho. Organizado.</h1>
+        <p class="hero-description">
+          Crie instanteaneamente e organize tarefas diretamente no seu navegador.
+        </p>
+        <p class="hero-footer">Nenhuma conta necessária.</p>
+      </div>
+
+      <ul id="taskList"></ul>
+    </main>
+
+    <script src="script.js"></script>
+    <footer class="footer">
+  <p>
+    © <span id="year"></span> Carlos Geovane · Task Manager Web
+  </p>
+</footer>
+
+  </body>
+</html>
